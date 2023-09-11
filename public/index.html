@@ -2,69 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Routing Transit Number Lookup for Banks in the United States</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find accurate and up-to-date routing numbers for banks across the United States. Searchable and sortable, get the information you need fast at BankRoutingNumber.net.">
+  <title>BankRoutingNumber.net - Your One-Stop Destination for U.S. Bank Routing Numbers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
 </head>
 <body>
-	<div class="bg-white">
-		<div class="w-100">
-			<div class="container mx-auto mb-6 pb-3" style="
+  <div class="bg-white">
+    <div class="w-100">
+      <div class="container mx-auto mb-6 pb-3" style="
      display: flex;
-			position: relative;
-			top: 20px;
-			padding: 25px 0;
-			text-align: center;">
-	
-				<div class="container">	
-					<h1>Routing Number Lookup for U.S. Banks</h1>
-				
-					<form id="lookupForm">
-						<select id="stateSelect" title="state-select">
-							<option value="">Select State</option>
-						</select>
-				
-						<select id="citySelect" title="city-select">
-							<option value="">Select City</option>
-						</select>
-				
-						<select id="bankSelect" title="bank-select">
-							<option value="">Select Bank</option>
-						</select>
-				
-						<button type="submit">Search</button>
-					</form>
-				</div>
-			</div>
-			<hr/>
-			<div class="container mx-auto mt-3" id="table-container">
-				<table id="resultsTable">
-					<thead>
-						<tr>
-							<th>State</th>
-							<th>City</th>
-							<th>Bank</th>
-							<th>Routing Number</th>
-						</tr>
-					</thead>
-					<tbody id="resultsBody">
-			</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-		
-		<footer class="footer">
+      position: relative;
+      top: 20px;
+      padding: 25px 0;
+      text-align: center;">
+        <div class="container">	
+          <h1>Routing Number Lookup for U.S. Banks</h1>
+          <form id="lookupForm">
+            <select id="stateSelect" title="state-select">
+              <option value="">Select State</option>
+            </select>
+            <select id="citySelect" title="city-select">
+              <option value="">Select City</option>
+            </select>
+            <select id="bankSelect" title="bank-select">
+              <option value="">Select Bank</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <hr/>
+      <div class="container mx-auto mt-3" id="table-container">
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>City</th>
+              <th>Bank</th>
+              <th>Routing Number</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody">
+          </tbody>
+        </table>
+      </div>
 			<hr style="padding: 30px 0px; margin-top: 50px;">
-				<div class="text-center">
-					<p class="footer-contact">See something inaccurate? Send corrections inquiry to <a href="mailto:help@bankroutingnumber.net">help@bankroutingnumber.net</a>, Thanks!</p>
-					<p class="footer-copyright">Copyright © 2023 - All right reserved by BankRoutingNumber.net / Routing-Numbers.US</p>
-				</div>
-		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-		<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
-		<script src="main.js" defer=""></script>
-	</body>
+      <!-- SEO Content Starts Here -->
+      <div class="container mx-auto mt-6">
+        <h2>What is a Bank Routing Number?</h2>
+        <p>A bank routing number, also known as an ABA (American Bankers Association) number, is a nine-digit code that identifies a financial institution in a transaction. It's a crucial part of various financial processes like direct deposits, wire transfers, and electronic payments.</p>
+
+        <h2>Why You Need a Routing Number</h2>
+        <p>When you're transferring money or setting up automatic payments, your bank routing number is often required. Whether you're an individual or a business, understanding how to find and use your routing number can streamline financial transactions and avoid delays.</p>
+
+        <h2>How to Use Our Searchable Table</h2>
+				<p>	Once you've filtered it by least the U.S. State, the data table will populate, where you can then type in the Search box to</p>
+        
+          <li>Search by Bank Name: Simply enter the name of the bank for which you need the routing number.</li>
+          <li>Sort by State: If you're looking for banks in a specific state, you can sort the list accordingly.</li>
+					<li>Sort by Routing Numbers: IF you know the routing number and want to validate it against our data, you can type in the routing number.</li>
+
+					<h3>What's the difference between a routing number and an account number?</h3>
+					<p>A routing number and an account number serve different purposes and are used in different contexts within the banking system.</p>
+
+					<h4>Routing Number:</h4>
+						<li>Length: Usually a 9-digit number.</li>
+						<li>Purpose: Identifies a specific financial institution and is used for directing the flow of money between banks.</li>
+						<li>Universal: The same routing number applies to all customers at the same bank location.</li>
+						<li>Usage: Commonly required for direct deposits, wire transfers, and setting up automated bill payments.</li>
+
+					<h4>Account Number:</h4>
+						<li>Length: Varies by bank but generally between 10 and 12 digits.</li>
+						<li>Purpose: Identifies your specific account within a bank.</li>
+						<li>Unique: Each account you have with a bank will have its own unique account number.</li>
+						<li>Usage: Used for identifying your account when making deposits, withdrawals, and other transactions.</li>
+
+					<p>In summary, while a routing number identifies where your account is held, the account number identifies what specifically that account is.</p>
+
+        
+				<h2>What's the difference between a routing number and an account number?</h2>
+				<p>A routing number and an account number serve different purposes and are used in different contexts within the banking system. A routing number is a 9-digit code that identifies a financial institution and is used for transactions like direct deposits and wire transfers. An account number, on the other hand, is unique to your specific account and is used for identifying your account when making deposits, withdrawals, and other transactions.</p>
+					
+					<h2>How many routing numbers can a bank have?</h2>
+					<p>The number of routing numbers a bank can have depends on several factors like the size of the bank, the number of branches, and whether it operates in multiple states. Small local banks usually have just one routing number, while large national or regional banks may have multiple routing numbers. Online banks typically have one routing number since they don't have multiple physical branches.</p>
+					
+					<h2>Is it safe to share my bank's routing number?</h2>
+					<p>Sharing your bank's routing number is generally considered safe for certain types of transactions like setting up direct deposits, automatic bill payments, or wire transfers. However, the routing number should not be shared without a legitimate reason or with untrusted parties. While a routing number alone is not enough to withdraw money from your account, it could be used in phishing scams when combined with other personal information.</p>
+					
+				
+
+        <h2>About Us</h2>
+        <p>BankRoutingNumber.net is committed to providing accurate and timely information about bank routing numbers across the United States. Our searchable and sortable table makes it easier than ever to find the information you need.</p>
+
+        <h2>Contact Us</h2>
+        <p>For any inquiries, suggestions, or corrections, feel free to contact us at <a href="mailto:help@bankroutingnumber.net">help@bankroutingnumber.net</a>.</p>
+      </div>
+      <!-- SEO Content Ends Here -->
+
+      <footer class="footer">
+        <hr style="padding: 30px 0px; margin-top: 50px;">
+        <div class="text-center">
+          <p class="footer-copyright">Copyright © 2023 - All rights reserved by BankRoutingNumber.net / Routing-Numbers.US</p>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+      <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      <script src="main.js" defer=""></script>
+    </div>
+  </div>
+</body>
 </html>

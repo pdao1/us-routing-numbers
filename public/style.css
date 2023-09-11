@@ -1453,3 +1453,25 @@ button, select {
   margin: 15px 0px;
   padding: 15px 0px;
 }
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 42px;
+}
+h3 {
+  font-size: 18px; 
+  font-weight: 600;
+  line-height: 42px;
+}
+li {
+  list-style: disc;
+    /* margin-left: 24px; */
+    line-height: 36px;
+}
+p {
+  line-height: 36px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
