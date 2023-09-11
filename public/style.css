@@ -1445,7 +1445,7 @@ button, select {
   padding: 20px;
 }
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
