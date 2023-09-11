@@ -1433,3 +1433,23 @@ button, select {
 	box-shadow: 1px 1px 4px #0006;
 	border-radius: 10px;
 }
+#resultsTable {
+  position: relative;
+  padding: 30px;
+}
+#table-container {
+  display: grid;
+  text-align: left;
+}
+#resultsTable_wrapper {
+  padding: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer-copyright, .footer-contact {
+  margin: 15px 0px;
+  padding: 15px 0px;
+}

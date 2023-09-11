@@ -1,3 +1,5 @@
+let dataTable;
+
 document.addEventListener("DOMContentLoaded", () => {
   const stateSelect = document.getElementById("stateSelect");
   const citySelect = document.getElementById("citySelect");
@@ -9,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const res = await fetch(url);
     return await res.json();
   };
+
 
   fetchOptions("/api/states").then(states => {
     states.forEach(state => {
@@ -36,7 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 	form.addEventListener("submit", async (e) => {
 		e.preventDefault();
-	
+
+    if (dataTable) {
+      dataTable.destroy();
+    }
+
 		const state = stateSelect.value;
 		const city = citySelect.value;
 		const bank = bankSelect.value;
@@ -60,5 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
 				</tr>
 			`;
 		});
+    dataTable = $('#resultsTable').DataTable();
 	});	
+});
+
+$(document).ready(() => {
+  dataTable = $('#resultsTable').DataTable();
 });
